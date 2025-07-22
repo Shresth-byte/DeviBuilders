@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civil Builders</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Devi<span>Builders</span></div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content fade-up">
+      <h1>Building Dreams with Strength</h1>
+      <p>We construct your vision with excellence and durability.</p>
+      <button onclick="scrollToSection('projects')">See Our Work</button>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section">
+    <h2 class="section-title fade-up">Our Services</h2>
+    <div class="cards">
+      <div class="card fade-up">
+        <img src="photos/Residential.jpg" alt="Residential Construction" width="300" />
+        <p>Residential Construction</p>
+        <a href="PDFs/PDF_Sample.pdf" class="download-btn" download>Download Brochure</a>
+      </div>
+      <div class="card fade-up">
+        <img src="photos/Commercial.jpg" alt="Commercial Projects" width="300" />
+        <p>Commercial Projects</p>
+        <a href="PDFs/PDF_Sample.pdf" class="download-btn" download>Download Brochure</a>
+      </div>
+      <div class="card fade-up">
+        <img src="photos/interior.jpg" alt="Interior Designing" width="300" />
+        <p>Interior Designing</p>
+        <a href="PDFs/PDF_Sample.pdf" class="download-btn" download>Download Brochure</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <h2 class="section-title fade-up">Featured Projects</h2>
+
+    <div class="filters fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ready">Ready to Move</button>
+      <button class="filter-btn" data-filter="under">Under Construction</button>
+    </div>
+
+    <div class="cards" id="projectCards">
+      <div class="card zoom-in" data-category="ready">
+        <h3>Luxury Villa</h3>
+        <p>3BHK | ₹85L | Ready to Move</p>
+      </div>
+      <div class="card zoom-in" data-category="under">
+        <h3>Corporate Tower</h3>
+        <p>Commercial Space | Under Construction</p>
+      </div>
+      <div class="card zoom-in" data-category="ready">
+        <h3>Urban Apartments</h3>
+        <p>2BHK | ₹60L | Ready to Move</p>
+      </div>
+      <div class="card zoom-in" data-category="under">
+        <h3>Skyline Residency</h3>
+        <p>Luxury Flats | Under Construction</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <h2 class="section-title fade-up">About Us</h2>
+    <p class="fade-in">We are a passionate team of engineers, architects, and planners dedicated to delivering innovative and durable infrastructure.</p>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title fade-up">Contact Us</h2>
+    <form class="contact-form fade-in">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Civil Builders. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
